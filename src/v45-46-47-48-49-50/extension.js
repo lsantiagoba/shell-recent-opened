@@ -24,15 +24,20 @@ export default class ShellRecentOpenedExtension extends Extension {
         });
         this._dbus.export(Gio.DBus.session, DBUS_PATH);
 
-        try {
-            installLauncher();
-            pinLauncherOnce(this._settings);
-        } catch (e) {
-            logError(e, 'Cannot add the recent items launcher to the Dash');
-        }
+        // The Dash keeps a pinned ID until its desktop file shows up, so
+        // pinning does not need to wait for the file to be written.
+        pinLauncherOnce(this._settings);
+        this._cancellable = new Gio.Cancellable();
+        installLauncher(this._cancellable).catch(e => {
+            if (!e.matches?.(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED))
+                logError(e, 'Cannot add the recent items launcher to the Dash');
+        });
     }
 
     disable() {
+        this._cancellable.cancel();
+        this._cancellable = null;
+
         this._dbus.unexport();
         this._dbus = null;
 
