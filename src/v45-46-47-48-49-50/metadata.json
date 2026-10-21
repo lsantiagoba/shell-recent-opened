@@ -1,0 +1,20 @@
+{
+    "name": "Shell Recent Opened",
+    "description": "Show recently opened applications and documents from the top bar and the Dash.",
+    "uuid": "shell-recent-opened@lsantiagoba",
+    "gettext-domain": "shell-recent-opened",
+    "settings-schema": "org.gnome.shell.extensions.shell-recent-opened",
+    "shell-version": [
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50"
+    ],
+    "version": 1,
+    "url": "https://github.com/lsantiagoba/shell-recent-opened",
+    "donations": {
+        "paypal": "leandrosb3"
+    }
+}

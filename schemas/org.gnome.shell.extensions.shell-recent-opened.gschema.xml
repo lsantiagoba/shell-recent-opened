@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.shell.extensions.shell-recent-opened"
+            path="/org/gnome/shell/extensions/shell-recent-opened/">
+        <key name="max-items" type="u">
+            <default>8</default>
+            <range min="1" max="30"/>
+            <summary>Items per section</summary>
+            <description>How many recent applications and how many recent documents the menu shows.</description>
+        </key>
+        <key name="recent-apps" type="as">
+            <default>[]</default>
+            <summary>Recently focused applications</summary>
+            <description>Application IDs, most recently used first. Filled automatically when windows get focus.</description>
+        </key>
+        <key name="dash-pinned" type="b">
+            <default>false</default>
+            <summary>Launcher already pinned</summary>
+            <description>Set once the Recent Items launcher has been pinned to the Dash, so it is not pinned again after the user removes it.</description>
+        </key>
+    </schema>
+</schemalist>

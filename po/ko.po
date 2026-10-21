@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shell-recent-opened\n"
+"PO-Revision-Date: 2026-10-21 00:00+0000\n"
+"Last-Translator: lsbcodes\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Language: ko\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Recent applications"
+msgstr "최근 사용한 애플리케이션"
+
+msgid "No applications yet"
+msgstr "아직 애플리케이션이 없습니다"
+
+msgid "Recent documents"
+msgstr "최근 문서"
+
+msgid "No documents yet"
+msgstr "아직 문서가 없습니다"

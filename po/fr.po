@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shell-recent-opened\n"
+"PO-Revision-Date: 2026-10-21 00:00+0000\n"
+"Last-Translator: lsbcodes\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Recent applications"
+msgstr "Applications récentes"
+
+msgid "No applications yet"
+msgstr "Aucune application pour le moment"
+
+msgid "Recent documents"
+msgstr "Documents récents"
+
+msgid "No documents yet"
+msgstr "Aucun document pour le moment"

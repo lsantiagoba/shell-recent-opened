@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shell-recent-opened\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Recent applications"
+msgstr ""
+
+msgid "No applications yet"
+msgstr ""
+
+msgid "Recent documents"
+msgstr ""
+
+msgid "No documents yet"
+msgstr ""

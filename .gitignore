@@ -1,0 +1,32 @@
+# Packaging output (./pack-extension.sh)
+pack/
+*.zip
+
+# Build output (./build.sh)
+build/
+
+# Compiled artifacts
+*.mo
+schemas/gschemas.compiled
+
+# Backup and temporary files
+*~
+*.bak
+*.swp
+*.swo
+*.tmp
+*.log
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+.directory
+
+# Local tooling
+node_modules/
+.claude/

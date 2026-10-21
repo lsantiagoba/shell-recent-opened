@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- SPDX-FileCopyrightText: 2026 lsbcodes -->
+  <!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#deddda"/>
+    </linearGradient>
+    <linearGradient id="app" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d32d"/>
+      <stop offset="1" stop-color="#e5a50a"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#62a0ea"/>
+      <stop offset="1" stop-color="#1c71d8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Recent application: rounded app tile behind the document -->
+  <rect x="10" y="24" width="56" height="56" rx="14" fill="#000" opacity="0.18"/>
+  <rect x="10" y="20" width="56" height="56" rx="14" fill="url(#app)"/>
+  <rect x="24" y="34" width="28" height="28" rx="7" fill="#fff" opacity="0.85"/>
+
+  <!-- Recent document: page with folded corner and text lines -->
+  <path d="M44 34 h36 l16 16 v58 a8 8 0 0 1 -8 8 h-44 a8 8 0 0 1 -8 -8 v-66 a8 8 0 0 1 8 -8 z" fill="#000" opacity="0.18" transform="translate(0 4)"/>
+  <path d="M44 34 h36 l16 16 v58 a8 8 0 0 1 -8 8 h-44 a8 8 0 0 1 -8 -8 v-66 a8 8 0 0 1 8 -8 z" fill="url(#page)"/>
+  <path d="M80 34 v12 a4 4 0 0 0 4 4 h12 z" fill="#c0bfbc"/>
+  <rect x="46" y="58" width="36" height="5" rx="2.5" fill="#9a9996"/>
+  <rect x="46" y="70" width="28" height="5" rx="2.5" fill="#9a9996"/>
+  <rect x="46" y="82" width="20" height="5" rx="2.5" fill="#9a9996"/>
+
+  <!-- Recent badge: clock with a counter-clockwise arrow -->
+  <circle cx="92" cy="96" r="26" fill="#000" opacity="0.18" transform="translate(0 3)"/>
+  <circle cx="92" cy="96" r="26" fill="url(#badge)"/>
+  <path d="M77 96 a15 15 0 1 0 4.4 -10.6" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M75 79 l7 7 l-9 2 z" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M92 86 v11 l7 5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
