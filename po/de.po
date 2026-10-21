@@ -20,3 +20,18 @@ msgstr "Zuletzt verwendete Dokumente"
 
 msgid "No documents yet"
 msgstr "Noch keine Dokumente"
+
+msgid "Clear history"
+msgstr "Verlauf leeren"
+
+msgid "Clear recent history?"
+msgstr "Verlauf leeren?"
+
+msgid "This removes the list of recent applications and the recently opened files of all applications."
+msgstr "Dadurch werden die Liste der zuletzt verwendeten Anwendungen und die zuletzt geöffneten Dateien aller Anwendungen entfernt."
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Clear"
+msgstr "Leeren"

@@ -20,3 +20,18 @@ msgstr "Documenti recenti"
 
 msgid "No documents yet"
 msgstr "Ancora nessun documento"
+
+msgid "Clear history"
+msgstr "Cancella cronologia"
+
+msgid "Clear recent history?"
+msgstr "Cancellare la cronologia recente?"
+
+msgid "This removes the list of recent applications and the recently opened files of all applications."
+msgstr "Questa operazione rimuove l’elenco delle applicazioni recenti e i file aperti di recente di tutte le applicazioni."
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Clear"
+msgstr "Cancella"

@@ -8,6 +8,14 @@ const BOOKMARK_RE = /<bookmark\s([^>]*)>([\s\S]*?)<\/bookmark>/g;
 const ATTRIBUTE_RE = /([\w:-]+)="([^"]*)"/g;
 const MIME_RE = /<mime:mime-type\s+type="([^"]*)"/;
 const APPLICATION_RE = /<bookmark:application\s+name="([^"]*)"/;
+// What GTK itself writes when the history is empty.
+const EMPTY_XBEL = `<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+</xbel>
+`;
 const XML_ENTITIES = {'&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&apos;': "'"};
 
 function unescapeXml(text) {
@@ -80,4 +88,19 @@ export function readRecentDocuments(limit) {
     }
 
     return documents;
+}
+
+// GTK apps watch this file and reload it, so emptying it clears their recent
+// lists too. PRIVATE keeps the file readable only by its owner, as GTK does.
+export function clearRecentDocuments() {
+    const contents = new GLib.Bytes(new TextEncoder().encode(EMPTY_XBEL));
+
+    Gio.File.new_for_path(XBEL_PATH).replace_contents_bytes_async(
+        contents, null, false, Gio.FileCreateFlags.PRIVATE, null, (file, result) => {
+            try {
+                file.replace_contents_finish(result);
+            } catch (e) {
+                logError(e, 'Cannot clear the recently used files');
+            }
+        });
 }

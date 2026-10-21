@@ -20,3 +20,18 @@ msgstr "最近使用的文档"
 
 msgid "No documents yet"
 msgstr "暂无文档"
+
+msgid "Clear history"
+msgstr "清除历史记录"
+
+msgid "Clear recent history?"
+msgstr "清除最近的历史记录？"
+
+msgid "This removes the list of recent applications and the recently opened files of all applications."
+msgstr "这将删除最近使用的应用程序列表以及所有应用程序最近打开的文件。"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Clear"
+msgstr "清除"
