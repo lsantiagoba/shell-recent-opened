@@ -9,7 +9,7 @@ import * as ModalDialog from 'resource:///org/gnome/shell/ui/modalDialog.js';
 import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
-import {clearRecentDocuments, readRecentDocuments} from './recentFiles.js';
+import {RecentDocuments, clearRecentDocuments} from './recentFiles.js';
 
 const ICON_SIZE = 32;
 const FALLBACK_APP_ICON = 'application-x-executable';
@@ -26,6 +26,12 @@ class RecentMenuButton extends PanelMenu.Button {
             style_class: 'system-status-icon',
         }));
 
+        // Loaded in the background; an open menu is refreshed once they arrive.
+        this._documents = new RecentDocuments(() => {
+            if (this.menu.isOpen)
+                this._rebuild();
+        });
+
         // PopupMenu refuses to open while it is empty, so the menu is filled
         // right away and then refreshed every time it opens.
         this._rebuild();
@@ -35,7 +41,10 @@ class RecentMenuButton extends PanelMenu.Button {
         });
 
         // The extension is disabled on every screen lock; an open dialog must go too.
-        this.connect('destroy', () => this._clearDialog?.destroy());
+        this.connect('destroy', () => {
+            this._clearDialog?.destroy();
+            this._documents.destroy();
+        });
     }
 
     _rebuild() {
@@ -81,7 +90,7 @@ class RecentMenuButton extends PanelMenu.Button {
     }
 
     _recentDocuments(limit) {
-        return readRecentDocuments(limit).map(doc => ({
+        return this._documents.get(limit).map(doc => ({
             title: doc.name,
             subtitle: doc.folder,
             icon: doc.mime
