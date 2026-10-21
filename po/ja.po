@@ -20,3 +20,18 @@ msgstr "最近使ったドキュメント"
 
 msgid "No documents yet"
 msgstr "ドキュメントはまだありません"
+
+msgid "Clear history"
+msgstr "履歴を消去"
+
+msgid "Clear recent history?"
+msgstr "最近の履歴を消去しますか?"
+
+msgid "This removes the list of recent applications and the recently opened files of all applications."
+msgstr "最近使ったアプリケーションの一覧と、すべてのアプリケーションで最近開いたファイルが削除されます。"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Clear"
+msgstr "消去"

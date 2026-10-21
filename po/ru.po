@@ -20,3 +20,18 @@ msgstr "Недавние документы"
 
 msgid "No documents yet"
 msgstr "Документов пока нет"
+
+msgid "Clear history"
+msgstr "Очистить историю"
+
+msgid "Clear recent history?"
+msgstr "Очистить недавнюю историю?"
+
+msgid "This removes the list of recent applications and the recently opened files of all applications."
+msgstr "Будут удалены список недавних приложений и недавно открытые файлы всех приложений."
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Clear"
+msgstr "Очистить"

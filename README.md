@@ -10,6 +10,7 @@ A GNOME Shell extension that shows your recently opened applications and documen
 
 - **Recent applications:** The apps you used most recently, in order. Click one to bring it back.
 - **Recent documents:** Files from the shared GNOME history (`~/.local/share/recently-used.xbel`), which GTK and GNOME apps write to. Click one to open it with its default app. Local files that no longer exist are hidden.
+- **Clear history:** One menu item clears both the list of recent applications and the recently opened files, after asking for confirmation. The files history is shared by all GTK and GNOME apps, so their recent lists are cleared too.
 - **Top bar button:** A "recent" icon in the top bar opens the menu.
 - **Dash launcher:** A **Recent Items** launcher is pinned to the Dash once and opens the same menu. If you unpin it, it stays unpinned.
 - **Localized UI:** Uses standard gettext catalogs and follows the system language automatically.

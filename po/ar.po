@@ -20,3 +20,18 @@ msgstr "المستندات الأخيرة"
 
 msgid "No documents yet"
 msgstr "لا توجد مستندات بعد"
+
+msgid "Clear history"
+msgstr "مسح السجل"
+
+msgid "Clear recent history?"
+msgstr "مسح السجل الأخير؟"
+
+msgid "This removes the list of recent applications and the recently opened files of all applications."
+msgstr "يزيل هذا قائمة التطبيقات الأخيرة والملفات التي فُتحت مؤخرًا في جميع التطبيقات."
+
+msgid "Cancel"
+msgstr "إلغاء"
+
+msgid "Clear"
+msgstr "مسح"

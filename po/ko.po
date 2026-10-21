@@ -20,3 +20,18 @@ msgstr "최근 문서"
 
 msgid "No documents yet"
 msgstr "아직 문서가 없습니다"
+
+msgid "Clear history"
+msgstr "기록 지우기"
+
+msgid "Clear recent history?"
+msgstr "최근 기록을 지우시겠습니까?"
+
+msgid "This removes the list of recent applications and the recently opened files of all applications."
+msgstr "최근 애플리케이션 목록과 모든 애플리케이션에서 최근에 연 파일이 삭제됩니다."
+
+msgid "Cancel"
+msgstr "취소"
+
+msgid "Clear"
+msgstr "지우기"
