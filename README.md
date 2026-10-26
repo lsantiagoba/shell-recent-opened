@@ -4,7 +4,7 @@
 
 # Shell Recent Opened
 
-A GNOME Shell extension that shows your recently opened applications and documents in one menu, available from the top bar and from the Dash.
+A GNOME Shell extension that shows your recently opened applications and documents in one menu, available from the top bar and from the Dash, plus rows of recent apps and documents in the app grid.
 
 ## Features
 
@@ -12,7 +12,9 @@ A GNOME Shell extension that shows your recently opened applications and documen
 - **Recent documents:** Files from the shared GNOME history (`~/.local/share/recently-used.xbel`), which GTK and GNOME apps write to. Click one to open it with its default app. Local files that no longer exist are hidden.
 - **Clear history:** One menu item clears both the list of recent applications and the recently opened files, after asking for confirmation. The files history is shared by all GTK and GNOME apps, so their recent lists are cleared too.
 - **Top bar button:** A "recent" icon in the top bar opens the menu.
-- **Dash launcher:** A **Recent Items** launcher is pinned to the Dash once and opens the same menu. If you unpin it, it stays unpinned.
+- **App grid rows:** Recent applications and recent documents appear above the app grid in the overview, with a **Clear history** button. Apps use GNOME's own app icons, so right-click offers the usual menu (new window, pin to Dash…). Documents show their thumbnail when the file manager has one.
+- **Dash launcher:** A **Recent Items** launcher is pinned to the Dash once and opens the same menu, or the app grid when the top bar button is hidden. If you unpin it, it stays unpinned.
+- **Settings:** Choose where recent items appear (top bar, Dash, app grid) and how many are shown. Open them from **Settings** in the menu, or from the Extensions app.
 - **Localized UI:** Uses standard gettext catalogs and follows the system language automatically.
 
 ## Supported GNOME Shell Versions
@@ -30,6 +32,9 @@ A GNOME Shell extension that shows your recently opened applications and documen
 src/v45-46-47-48-49-50/
 ├── extension.js          # Entry point: panel button, app tracking and D-Bus object
 ├── recentMenuButton.js   # Top bar button and its menu
+├── recentGrid.js        # Recent apps and documents rows in the app grid
+├── clearHistory.js      # Clear history confirmation dialog
+├── prefs.js             # Settings window
 ├── recentFiles.js        # Reads recently used documents
 ├── dashLauncher.js       # Dash launcher and its D-Bus interface
 └── metadata.json
@@ -46,6 +51,10 @@ Schema: `org.gnome.shell.extensions.shell-recent-opened`
 | --- | --- | --- |
 | `max-items` | `8` | Items shown per section (1–30) |
 | `recent-apps` | `[]` | Application IDs, filled automatically |
+| `show-in-panel` | `true` | Shows the top bar button |
+| `show-in-dash` | `true` | Keeps the launcher pinned to the Dash |
+| `show-in-app-grid` | `true` | Shows the recent apps row above the app grid |
+| `show-documents-in-app-grid` | `true` | Shows the recent documents row above the app grid |
 | `dash-pinned` | `false` | Set once the Dash launcher has been pinned |
 
 ```bash

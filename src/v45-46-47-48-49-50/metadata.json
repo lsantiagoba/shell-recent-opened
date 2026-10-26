@@ -1,6 +1,6 @@
 {
     "name": "Shell Recent Opened",
-    "description": "Show recently opened applications and documents from the top bar and the Dash.",
+    "description": "Show recently opened applications and documents from the top bar, the app grid and the Dash.",
     "uuid": "shell-recent-opened@lsantiagoba",
     "gettext-domain": "shell-recent-opened",
     "settings-schema": "org.gnome.shell.extensions.shell-recent-opened",

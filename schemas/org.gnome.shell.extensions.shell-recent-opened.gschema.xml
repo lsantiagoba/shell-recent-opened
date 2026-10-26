@@ -13,6 +13,26 @@
             <summary>Recently focused applications</summary>
             <description>Application IDs, most recently used first. Filled automatically when windows get focus.</description>
         </key>
+        <key name="show-in-app-grid" type="b">
+            <default>true</default>
+            <summary>Show recent applications in the app grid</summary>
+            <description>Adds a row of recently used applications above the app grid of the overview.</description>
+        </key>
+        <key name="show-documents-in-app-grid" type="b">
+            <default>true</default>
+            <summary>Show recent documents in the app grid</summary>
+            <description>Adds a row of recently opened documents above the app grid of the overview.</description>
+        </key>
+        <key name="show-in-panel" type="b">
+            <default>true</default>
+            <summary>Show the top bar button</summary>
+            <description>Shows the recent items menu from an icon in the top bar.</description>
+        </key>
+        <key name="show-in-dash" type="b">
+            <default>true</default>
+            <summary>Show the Dash launcher</summary>
+            <description>Keeps the Recent Items launcher pinned to the Dash. Unpinning it from the Dash turns this off.</description>
+        </key>
         <key name="dash-pinned" type="b">
             <default>false</default>
             <summary>Launcher already pinned</summary>

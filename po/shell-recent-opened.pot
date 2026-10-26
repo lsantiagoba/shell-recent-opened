@@ -31,3 +31,24 @@ msgstr ""
 
 msgid "Clear"
 msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Top bar and Dash"
+msgstr ""
+
+msgid "Top bar button"
+msgstr ""
+
+msgid "Dash launcher"
+msgstr ""
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr ""
+
+msgid "App grid"
+msgstr ""
+
+msgid "Items per section"
+msgstr ""

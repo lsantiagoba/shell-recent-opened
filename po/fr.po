@@ -35,3 +35,24 @@ msgstr "Annuler"
 
 msgid "Clear"
 msgstr "Effacer"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Top bar and Dash"
+msgstr "Barre supérieure et Dash"
+
+msgid "Top bar button"
+msgstr "Bouton de la barre supérieure"
+
+msgid "Dash launcher"
+msgstr "Lanceur du Dash"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "Ouvre le menu de la barre supérieure, ou la grille des applications si le bouton est masqué"
+
+msgid "App grid"
+msgstr "Grille des applications"
+
+msgid "Items per section"
+msgstr "Éléments par section"

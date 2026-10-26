@@ -15,13 +15,13 @@ export const DBUS_INTERFACE = `
 
 // The launcher has no program of its own: it asks the running shell, through
 // the D-Bus object this extension exports, to open the recent items menu.
-const LAUNCHER_CONTENTS = `[Desktop Entry]
+const launcherContents = iconPath => `[Desktop Entry]
 Type=Application
 Name=Recent Items
 Name[es]=Recientes
 Comment=Show recently opened applications and documents
 Comment[es]=Muestra las aplicaciones y documentos abiertos recientemente
-Icon=document-open-recent
+Icon=${iconPath}
 Exec=gdbus call --session --dest org.gnome.Shell --object-path ${DBUS_PATH} --method org.gnome.Shell.Extensions.RecentOpened.Show
 Terminal=false
 StartupNotify=false
@@ -30,7 +30,9 @@ Categories=Utility;
 
 // Kept on disable on purpose, like a pinned Dash icon: the shell disables
 // extensions on every screen lock, and removing it would reorder the Dash.
-export async function installLauncher(cancellable) {
+// The icon is shipped with the extension and referenced by its full path,
+// so it does not depend on the icon theme.
+export async function installLauncher(iconPath, cancellable) {
     const dir = Gio.File.new_for_path(GLib.build_filenamev([GLib.get_user_data_dir(), 'applications']));
     try {
         await dir.make_directory_async(GLib.PRIORITY_DEFAULT, cancellable);
@@ -39,7 +41,7 @@ export async function installLauncher(cancellable) {
             throw e;
     }
 
-    const contents = new GLib.Bytes(new TextEncoder().encode(LAUNCHER_CONTENTS));
+    const contents = new GLib.Bytes(new TextEncoder().encode(launcherContents(iconPath)));
     await dir.get_child(LAUNCHER_ID).replace_contents_bytes_async(
         contents, null, false, Gio.FileCreateFlags.NONE, cancellable);
 }

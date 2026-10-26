@@ -35,3 +35,24 @@ msgstr "Abbrechen"
 
 msgid "Clear"
 msgstr "Leeren"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Top bar and Dash"
+msgstr "Obere Leiste und Dash"
+
+msgid "Top bar button"
+msgstr "Knopf in der oberen Leiste"
+
+msgid "Dash launcher"
+msgstr "Dash-Starter"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "Öffnet das Menü der oberen Leiste oder das App-Raster, wenn der Knopf ausgeblendet ist"
+
+msgid "App grid"
+msgstr "App-Raster"
+
+msgid "Items per section"
+msgstr "Einträge pro Abschnitt"
