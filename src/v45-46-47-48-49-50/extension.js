@@ -1,4 +1,5 @@
 import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
 import Shell from 'gi://Shell';
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
@@ -54,7 +55,8 @@ export default class ShellRecentOpenedExtension extends Extension {
         this._favoritesId = global.settings.connect('changed::favorite-apps', () => this._syncSettingFromDash());
 
         this._cancellable = new Gio.Cancellable();
-        installLauncher(this._cancellable).catch(e => {
+        const iconPath = GLib.build_filenamev([this.path, 'icons', 'shell-recent-opened.svg']);
+        installLauncher(iconPath, this._cancellable).catch(e => {
             if (!e.matches?.(Gio.IOErrorEnum, Gio.IOErrorEnum.CANCELLED))
                 logError(e, 'Cannot add the recent items launcher to the Dash');
         });

@@ -37,13 +37,17 @@ FILES=(
     "recentFiles.js"
     "recentMenuButton.js"
     "dashLauncher.js"
+    "recentGrid.js"
+    "clearHistory.js"
+    "prefs.js"
+    "icons"
 )
 
 # Copy necessary files from source directory
 echo -e "\t3. Copying extension files..."
 for file in "${FILES[@]}"; do
     if [ -e "$SOURCE_DIR/$file" ]; then
-        cp "$SOURCE_DIR/$file" "$PACK_DIR/$file"
+        cp -r "$SOURCE_DIR/$file" "$PACK_DIR/$file"
         echo -e "\t   ✓ $file"
     else
         echo -e "\t   ⚠️  Warning: $file not found"

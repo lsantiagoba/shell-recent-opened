@@ -44,6 +44,7 @@ echo -e "\t3. Copying extension files..."
 find "$EXTENSION_DIR" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
 cp "$SOURCE_DIR/metadata.json" "$EXTENSION_DIR/"
 cp "$SOURCE_DIR"/*.js "$EXTENSION_DIR/"
+cp -r "$SOURCE_DIR/icons" "$EXTENSION_DIR/"
 
 # A manual install has to compile the schema itself.
 echo -e "\t4. Installing GSettings schema..."

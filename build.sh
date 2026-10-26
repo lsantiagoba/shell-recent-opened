@@ -29,6 +29,7 @@ FILES=(
     "recentGrid.js"
     "clearHistory.js"
     "prefs.js"
+    "icons"
 )
 
 # Start from a clean build directory so removed files do not linger.
@@ -39,7 +40,7 @@ mkdir -p "$BUILD_DIR"
 echo "📋 Copying files from ${SRC_DIR} to ${BUILD_DIR}/..."
 for file in "${FILES[@]}"; do
     if [ -e "${SRC_DIR}/${file}" ]; then
-        cp "${SRC_DIR}/${file}" "${BUILD_DIR}/"
+        cp -r "${SRC_DIR}/${file}" "${BUILD_DIR}/"
         echo "  ✓ ${file}"
     else
         echo "  ⚠️  Warning: ${file} not found in ${SRC_DIR}"
