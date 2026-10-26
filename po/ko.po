@@ -35,3 +35,24 @@ msgstr "취소"
 
 msgid "Clear"
 msgstr "지우기"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Top bar and Dash"
+msgstr "상단 표시줄과 대시"
+
+msgid "Top bar button"
+msgstr "상단 표시줄 버튼"
+
+msgid "Dash launcher"
+msgstr "대시 실행기"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "상단 표시줄 메뉴를 열거나, 버튼이 숨겨져 있으면 앱 그리드를 엽니다"
+
+msgid "App grid"
+msgstr "앱 그리드"
+
+msgid "Items per section"
+msgstr "섹션별 항목 수"

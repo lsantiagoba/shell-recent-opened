@@ -35,3 +35,24 @@ msgstr "إلغاء"
 
 msgid "Clear"
 msgstr "مسح"
+
+msgid "Settings"
+msgstr "الإعدادات"
+
+msgid "Top bar and Dash"
+msgstr "الشريط العلوي والمرسى"
+
+msgid "Top bar button"
+msgstr "زر الشريط العلوي"
+
+msgid "Dash launcher"
+msgstr "مشغّل المرسى"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "يفتح قائمة الشريط العلوي، أو شبكة التطبيقات عند إخفاء الزر"
+
+msgid "App grid"
+msgstr "شبكة التطبيقات"
+
+msgid "Items per section"
+msgstr "عدد العناصر في كل قسم"

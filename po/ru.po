@@ -35,3 +35,24 @@ msgstr "Отмена"
 
 msgid "Clear"
 msgstr "Очистить"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Top bar and Dash"
+msgstr "Верхняя панель и Dash"
+
+msgid "Top bar button"
+msgstr "Кнопка на верхней панели"
+
+msgid "Dash launcher"
+msgstr "Значок в Dash"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "Открывает меню верхней панели или сетку приложений, если кнопка скрыта"
+
+msgid "App grid"
+msgstr "Сетка приложений"
+
+msgid "Items per section"
+msgstr "Элементов в разделе"

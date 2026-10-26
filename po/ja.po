@@ -35,3 +35,24 @@ msgstr "キャンセル"
 
 msgid "Clear"
 msgstr "消去"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Top bar and Dash"
+msgstr "トップバーとDash"
+
+msgid "Top bar button"
+msgstr "トップバーのボタン"
+
+msgid "Dash launcher"
+msgstr "Dashのランチャー"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "トップバーのメニューを開きます。ボタンが非表示の場合はアプリグリッドを開きます"
+
+msgid "App grid"
+msgstr "アプリグリッド"
+
+msgid "Items per section"
+msgstr "セクションごとの項目数"

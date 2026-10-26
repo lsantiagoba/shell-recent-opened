@@ -35,3 +35,24 @@ msgstr "取消"
 
 msgid "Clear"
 msgstr "清除"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Top bar and Dash"
+msgstr "顶栏和程序坞"
+
+msgid "Top bar button"
+msgstr "顶栏按钮"
+
+msgid "Dash launcher"
+msgstr "程序坞启动器"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "打开顶栏菜单；隐藏按钮时打开应用网格"
+
+msgid "App grid"
+msgstr "应用网格"
+
+msgid "Items per section"
+msgstr "每个分区的项目数"

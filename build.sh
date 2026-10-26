@@ -26,6 +26,9 @@ FILES=(
     "recentFiles.js"
     "recentMenuButton.js"
     "dashLauncher.js"
+    "recentGrid.js"
+    "clearHistory.js"
+    "prefs.js"
 )
 
 # Start from a clean build directory so removed files do not linger.

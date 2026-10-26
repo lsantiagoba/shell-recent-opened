@@ -35,3 +35,24 @@ msgstr "Annulla"
 
 msgid "Clear"
 msgstr "Cancella"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Top bar and Dash"
+msgstr "Barra superiore e Dash"
+
+msgid "Top bar button"
+msgstr "Pulsante della barra superiore"
+
+msgid "Dash launcher"
+msgstr "Avviatore della Dash"
+
+msgid "Opens the top bar menu, or the app grid when the button is hidden"
+msgstr "Apre il menu della barra superiore, o la griglia delle applicazioni se il pulsante è nascosto"
+
+msgid "App grid"
+msgstr "Griglia delle applicazioni"
+
+msgid "Items per section"
+msgstr "Elementi per sezione"
